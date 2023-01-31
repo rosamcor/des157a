@@ -1,13 +1,180 @@
+/*
+Colors:
+Light #FBFFF1
+Dark #1C0221
+Pink #EF959D
+Blue #46B1C9
+Green #2E5339
+*/
+
 body {
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0;
+    margin: auto;
+    
     max-width: 1200px;
     min-width: 800px;
+    background-color: #FBFFF1;
+    font-family: 'Gilda Display';
+    color: #1C0221;
+   
+    
+    
 }
 
 #banner {
     width: 1100px;
     height: 250px;
+    background-color:#EF959D ;
+    position:absolute;
+    top: 0;
+    z-index: 1;
+    
+
 }
 
-ul {
-    list-style-type:none;
+header { 
+    margin-left: 4em;
+    padding: 8m 8m 8em 8em;
+   
+}
+
+header h1 {
+    font-family: 'Gilda Display';
+    color: #FBFFF1;
+    font-weight: 400;
+    font-size: 4em;
+    word-spacing: 1em;
+    position:relative;
+    top: 0.05em;
+    margin-left: 2.15em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    z-index:3;
+    
+    
+}
+
+header h2 {
+    color: #FBFFF1;
+    font-weight: 400;
+    position: relative;
+    z-index:2;
+    margin-left: 5.85em;
+    
+}
+
+
+
+
+
+main {
+    display:flex;
+    border-style:dotted ;
+    border-color: #2E5339;
+    border-width: .4em;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    margin-top: 8em;
+    margin-left: 13em;
+    max-width: 800px ;
+
+    
+    
+}
+section {
+    flex-direction: row;
+    padding: 2em;
+    margin-left: 2em;
+    
+    
+}
+/*Lists*/
+ul {  
+padding: 0 0 0 0 ; 
+display: block;    
+}
+
+
+ul li {
+list-style-type: none;
+display: block; 
+padding: 2% 2% 2% 2%; 
+}
+
+section h2 {
+    display: block; 
+    padding: 2% 2% 2% 2%; 
+    font-weight: bold;
+    color: #2E5339;
+    
+    /*background-color: rgba( 70, 177, 201, 0.4);*/
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #1C0221;
+    display: block; 
+    padding: 2% 2% 2% 2%; 
+    width: 10em;
+    
+}
+
+ul li a:hover {
+    background-color: rgba( 239, 149, 157, 0.3);
+    transform: scale(1.05);
+
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    margin-top: 3em;
+    width: 100%;
+    margin-left: 0;
+    text-decoration: none;
+    font-weight: bold;
+   
+    }
+
+    footer a {
+        font-weight: 400;
+        text-decoration: none;
+        margin-top: 7em ;
+        color: #1C0221;
+       
+    }
+
+    footer a:hover {
+        font-size: large;
+        font-weight: 600;
+        color: #2E5339;
+       
+    }
+
+#white-flwr {
+    position: absolute;
+    top:3.75em;
+    left: 55.9em ;
+    z-index: 5;
+    
+    
+}
+
+
+#bunny{
+    position:absolute;
+    left: 85em;
+    top: 0;
+    z-index:0;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1.5s;
+}
+
+header:hover #bunny{
+    transform:rotate(45deg);
+    left: 90em;
+   
 }
