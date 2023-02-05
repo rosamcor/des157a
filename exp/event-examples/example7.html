@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing Key Presses</title>
+</head>
+    <body>
+        <h1>Pressed Key Event</h1>
+        <p> Press a Key on the keyboard</p>
+
+        <script>
+            document.addEventListener('keydown', function(event){
+                alert(`The ${event.key} key was pressed`);
+            });
+        </script>
+    </body>
+</html>

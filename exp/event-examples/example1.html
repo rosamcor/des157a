@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
+</head>
+    <body>
+        <h1>First Event</h1>
+        <button>Don't Click Me</button>
+
+        <script>
+            var btn = document.querySelector('button');
+
+            //Named Function Example
+           /* function ouch() {
+                alert("oh no you didn't!");
+            }
+
+            btn.onclick = ouch; */
+
+
+            //Anonymous Function Example
+           /* btn.onclick = function() {
+                alert("oh no you didn't!");
+            }*/
+
+
+            //Named function with event listener
+            /*function ouch () {
+                alert("oh no you didn't!");
+            }
+
+            btn.addEventListener('click', ouch);*/
+
+
+            //Event Listener w/ anonymous funciton <<-- Most Common
+
+            /*btn.addEventListener('click', function() {
+                alert("oh no you didn't!"); 
+            });*/
+
+
+            //Arrow Function version
+
+
+            /*btn.addEventListener('click', () =>{
+                alert("oh no you didn't!"); 
+            }); */
+
+            //Event Object
+           
+           /* btn.addEventListener('click', function(event) {
+                event.target.style.backgroundColor = 'red';
+                alert("oh no you didn't!"); 
+            });*/
+
+
+
+        
+            
+        </script>
+
+    </body>
+</html>
