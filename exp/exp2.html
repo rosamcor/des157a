@@ -3,35 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exp 2</title>
+    <title>Exp. 2</title>
 </head>
     <body>
-        <h1>Welcome to the Void...</h1>
+    
+        <h1>Welcome to the Void of Experiment 2...</h1>
+       
+        <h2></h2>
+
         <script>
             var userinput = prompt("What's your name?", "");
-            var username = userinput.toLowerCase();
-            var colors = ["green","blue", "purple", "pink","blue"];
-            var firstltr = username[0];
+            var username = userinput.toUpperCase();
+            var desserts = ["mango bingsoo","matcha ice cream", "strawberry frozen yogurt", "coffee donuts"];
+
+
+            
+            function randomNum(min, max) {
+                return Math.floor ( (max - min +1) * Math.random()) + min;
+
+            }
+
+            function userDessert(name, food) {
+
+                var dessertOffer = document.querySelector('h2');
+                var surpriseDessert = desserts[randomNum(0,desserts.length-1)];
+
+                dessertOffer.innerHTML = `Hey ${username}, we thought you'd like some ${surpriseDessert} while you wait for eternity!`;
+
+                if (surpriseDessert == 'mango bingsoo') {
+                    document.body.style.backgroundColor = "#f5cda7";
+                }
+
+                else if (surpriseDessert == 'matcha ice cream') {
+                    document.body.style.backgroundColor = "#C9DBBA";
+                }
+
+                else if (surpriseDessert == 'strawberry frozen yogurt') {
+                    document.body.style.backgroundColor = "#FFB5C2";
+                }
+
+                else if (surpriseDessert == 'coffee donuts') {
+                    document.body.style.backgroundColor = "#CCAD8F";
+                    
+                }
+
+
+            }
+
+           userDessert(username, desserts);
 
               
-               if (firstltr === 'b' || 'a' || 'r' ) {
-                    document.body.style.backgroundColor = 'green'; 
-                }
-
-                else if (firstltr === 'l' || 'f'){
-                    document.body.style.backgroundColor = 'purple'; 
-                }
-                
+              
             
-              /* function backcolor(name) {
-
-                    
-                   /* else {
-                        document.setAttribute('background-color','blue');
-                    } 
-                }
-
-                function backcolor(username); */
+              
         
             
 
