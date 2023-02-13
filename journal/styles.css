@@ -1,0 +1,64 @@
+/*
+Colors:
+Light #FBFFF1
+Dark #1C0221
+Pink #EF959D
+Blue #46B1C9
+Green #2E5339
+*/
+
+
+body {
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0;
+    margin: auto;
+    
+    max-width: 1200px;
+    min-width: 800px;
+    background-color: #FBFFF1;
+    font-family: 'Gilda Display';
+    color: #1C0221;
+
+    padding-left: 3em;
+    padding-right: 3em;
+   
+    
+    
+}
+
+header {
+    border-bottom: .2em dotted #2E5339;
+    font-size: 3.7em;
+    
+}
+
+header h1 {
+    margin-bottom: .1em;
+}
+
+article {
+    padding-top: 4em;
+    font-size: 1.7em;
+    max-width: 85%;
+    
+}
+
+article time {
+    font-size: .75em;
+    font-style: italic;
+   
+ 
+    
+}
+
+article p {
+    font-size: .85em;
+    line-height: 1.35em;
+    
+}
+
+article p a {
+    text-decoration: none;
+    color: #2E5339;
+    font-weight: bold;
+}
