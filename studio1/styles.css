@@ -1,0 +1,17 @@
+body {
+    max-width: 1200px;
+    max-height: 750px;
+    margin: auto;
+    
+}
+
+main header {
+    margin: auto;
+}
+#form {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 200px ;
+}

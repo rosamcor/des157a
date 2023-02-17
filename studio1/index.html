@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Normalize CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Lora:ital@0;1&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="script.js" defer></script>
+
+        <title>Mad Lib</title>
+        
+    </head>
+
+    <body>
+
+        <header>
+            <h1>What a lovely day...</h1>
+        </header>
+
+        <main>
+            
+            <form id="form">
+
+                <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                </div>
+
+                <div>
+                <label for="verb">Verb:</label>
+                <input type="text" id="verb" required>
+                </div>
+
+                <div>
+                <label for="adj">Adjective:</label>
+                <input type="text" id="adj" required>
+                </div>
+
+                <div>
+                <label for="pplace">Public Place:</label>
+                <input type="text" id="pplace" required>
+                </div>
+
+                <div>
+                <label for="animal">Animal:</label>
+                <input type="text" id="animal" required>
+                </div>
+                
+                <input type="submit" value="Submit">  
+            
+               
+            </form>
+
+            <article id="madlib"></article>
+
+
+        </main>
+
+        
+    </body>
+
+</html>
