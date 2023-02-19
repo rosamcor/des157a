@@ -52,7 +52,7 @@ article time {
 }
 
 article p {
-    font-size: .85em;
+    font-size: .75em;
     line-height: 1.35em;
     
 }
@@ -62,3 +62,19 @@ article p a {
     color: #2E5339;
     font-weight: bold;
 }
+
+img{
+    max-width: 300px;
+    max-height: 300px;
+    padding-top: 2.4em;
+}
+
+#dog{
+    padding-top: .5em;
+}
+
+figcaption{
+    font-weight: 100;
+    font-size: .6em;
+}
+
