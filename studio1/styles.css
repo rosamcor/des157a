@@ -2,16 +2,128 @@ body {
     max-width: 1200px;
     max-height: 750px;
     margin: auto;
+    background-color: #FFE7F3;
+    
     
 }
 
-main header {
+header{
+    display: flex;
+    padding-top: 3em;
+}
+header h1{
     margin: auto;
+    font-family: 'Dancing Script';
+    font-size: 9em;
+    
+}
+
+main h2{
+   text-align: center;
+   font-family: 'Coming Soon';
+   font-weight: 400;
+   font-size: 3em;
+   padding-top: 1.15em;
+
 }
 #form {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    width: 200px ;
+    width: 325px ;
+    font-family: 'Coming Soon';
+    font-size: 1.2em;
+    padding: 0;
+    
 }
+
+
+#form input[type="text"] {
+    background-color: #E9D9F1;
+    border: none;
+    border-radius: .25em;
+    width: 8.5em;
+    
+}
+
+input[type="text"]:focus {
+    border:1px solid #D6D9DC;
+    outline: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#form input[type="submit"] {
+    background-color: #B881D7;
+    border: none;
+    border-radius: .25em;
+}
+
+#button-submit{
+    padding: 0px 250px;
+    
+}
+
+#button-submit input{
+    display: block;
+    padding: 5px 25px 2px 25px;
+}
+
+main {
+    position: relative;
+    z-index: 3;
+    
+}
+
+#sticky-note{
+position: absolute;
+left: 48.5em;
+bottom: 19em;
+z-index: 1;
+}
+
+/* Results View 1 - Mad Person - Overlay */
+
+#mad-person h1 {
+    font-family: 'Dancing Script';
+
+}
+
+/* Results View 2 - Suing Letter - Overlay */
+.resultView {
+    position: absolute;
+    left: 0;
+    top:0;
+    /* background-color: #FFF8EC; */
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+} 
+
+#letter {
+    max-width: 45em;
+    margin:auto;
+    font-family:'Lora' ;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    
+}
+
+
+#letter h1{
+    padding-bottom: .5em;
+    font-family:'Rubik Dirt' ;
+    font-size: 8em;
+    text-align: center;
+    font-weight: 400;
+    color: #B2121C;
+    
+}
+
+@keyframes results {
+    
+}
+
+
