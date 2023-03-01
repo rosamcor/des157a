@@ -25,40 +25,44 @@
 
     <body>
          <!-- Form View-->
-        <header>
-            <h1>What a lovely day...</h1>
+        <header id="header" class="">
+            <h1>What a lovely day to get...</h1>
         </header>
 
-        <main>
-            <h2>Task List</h2>
-            <form id="form">
+        <main class="">
 
-                <div>
-                <label for="name">Name:</label>
+            
+
+            <h2 id="list" class="">Task List</h2>
+            
+            <form id="form" class="">
+
+                <div id="input1" class="">
+                <label for="name">Last Name:</label>
                 <input type="text" id="name" required>
                 </div>
 
-                <div>
+                <div id="input2" class="">
                 <label for="verb">Past-Tense Verb:</label>
                 <input type="text" id="verb" required>
                 </div>
 
-                <div>
+                <div id="input3" class="">
                 <label for="adj">Adjective:</label>
                 <input type="text" id="adj" required>
                 </div>
 
-                <div>
+                <div id="input4" class="">
                 <label for="pplace">Public Place:</label>
                 <input type="text" id="pplace" required>
                 </div>
 
-                <div>
-                <label for="animal">Animal:</label>
+                <div id="input5" class="">
+                <label  for="animal">Animal:</label>
                 <input type="text" id="animal" required>
                 </div>
                 
-                <div id="button-submit" ><input  type="submit" value="Submit"> </div>
+                <div id="submit" class=""><input  type="submit" value="Submit"> </div>
             
                
             </form>
@@ -71,58 +75,23 @@
 
 
 
-        <!-- Overlay Result View-->
-        <!-- <section class="resultView">
-            <article id="mad-person">
-
-            <h1>What a lovely day...</h1>
-            <h2>to get SUED !</h2>
-
-                
-
-            </article>
-        </section> -->
-
-        <!-- Overlay Final Results View-->
-            <!-- <section class="resultView">
-                <article id="letter">
-
-                <h1>SUED</h1>
-            
-                <p> Dear Dr. Name,</p>
-
-                    <p>Late last night you Verb away in your Adjective Bugatti after kidnapping my super jacked hamster and getting him on steroids. My hamster was peacefully rampaging through the Public Place in order to get their steps in before the end of the day.</p>
-
-                    <p>This letter is to notify you that I have filed a case against you for the unauthorized pump of steroids you gave to my hamster and for the kidnapping of America’s #1 natural hamster body builder. I am very disappointed in you. You are a Animal for the way you treated my hamster!</p>
-
-                <p> See you in court!</p>
-
-                <p> Your Ex-Super Patient,</p>
-
-                    <p>John</p>
+   
+        <!-- Overlay Results View-->
+            <section id="overlay" class="hidden">
+                <article id="letter" >
 
                     
 
                 </article>
-            </section> -->
+            </section>
 
 
         <!-- Artistic Elements -->
 
-        <div id="sticky-note">
-            <img src="images/Sticky-Note.svg" width='433' height='363' alt="purple sticky note">
-        </div>
-
-        <!-- <div id="stamp">
-            <img src="" width='' height='' alt="outer border of stamp">
-        </div>
-
-        <div id="mad-person">
-            <img src="" width='' height='' palt="mad person sitting ">
-
-        </div> -->
-
-        
+            <div id="sticky-note" class="">
+                <img src="images/Sticky-Note.svg" width='433' height='363' alt="purple sticky note">
+            </div>
+                
     </body>
 
 </html>

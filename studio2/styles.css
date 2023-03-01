@@ -1,0 +1,156 @@
+
+/* Slider CSS */
+:root {
+    --sliderwidth: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* I added this for the section */
+#one {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 200px;
+}
+
+.slider div img {
+    height: 100%;
+    display: block;
+    margin-right: 20px;
+}
+
+.a, .b {
+   display: flex;
+   height: 100%;
+}
+
+@keyframes moveSlider {
+    from { left: 0; }
+    to { left: var(--sliderwidth) }
+}
+.animate {
+    animation-name: moveSlider;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Slideshow (Advanced) */
+
+body, p { margin: 0; padding: 0; }
+
+body { padding: 100px; background: #717171; }
+
+#content {
+	margin: 100px auto 20px auto;
+	border: 10px solid #4C4C4C;
+	width: 400px;
+	height: 266px;
+	position: relative;
+}
+
+#content img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+p { text-align: center; }
+
+/********** Link Styles ***********/
+
+#links {
+	width: 420px;
+	display: flex;
+	margin: auto;
+}
+
+#links a {
+	display: block;
+	flex: 1;
+	background: #6C0204;
+	height: 50px;
+	line-height: 50px;
+	color: #D5D5D5;
+	text-decoration: none;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#links a:hover {
+	background: #A51D1F;
+	color: #fff;
+}
+
+/************ Animation Styles ************/
+
+.fadeinimg {
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* Overlays */
+
+body {
+    font-family: arial;
+    color: #333;
+    padding-top: 200px;
+    line-height: 1.4em;
+}
+
+main {
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color:#fff;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
