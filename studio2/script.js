@@ -31,7 +31,7 @@
 
 //Slideshow (Advanced)
 let currentImage = 0;
-const myphotos = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
+const myphotos = ["l", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
 
 const container = document.getElementById('content');
 const nextBtn = document.getElementById('next');
@@ -70,9 +70,10 @@ function swapImage() {
 //Overlays
 
 
-document.querySelector('.open').addEventListener('click', function (event) {
+//Overlay 1 - Here
+document.querySelector('#office').addEventListener('click', function (event) {
     event.preventDefault();
-    document.getElementById('overlay').className = 'showing';
+    document.getElementById('laksa-overlay').className = 'showing';
 });
 
 document.querySelector('.close').addEventListener('click', function (event) {
