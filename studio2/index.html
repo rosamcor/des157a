@@ -12,7 +12,7 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Dancing+Script:wght@500;600&family=Lora:ital@0;1&family=Rubik+Dirt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Titan+One&display=swap" rel="stylesheet">
         
         <!-- My Style Sheets -->
         <link rel="stylesheet" href="styles.css">
@@ -25,59 +25,14 @@
 
     <body>
 
-        <!-- <header>
-            <h1>Feet off the Floor, We’re Going Back to Singapore</h1>
 
-            <h2>Here or There</h2>
-    
-        </header> -->
-    <!-- Slider -->
-        <!-- <section id="one">
-            <div class="slider">
-                <div class="a">
-                    <img src="photos/840A0114.jpeg" alt="slide" class="photo">
-                    <img src="photos/DCP_0682.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_0025.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_0202.jpeg" alt="slid " class="photo">
-                    <img src="photos/IMG_0215.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_0351.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_0385.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_0400.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_1122.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_1123.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_3149.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_3223.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_3745.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_4247.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_4251.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_4984.jpeg" alt="slide" class="photo">
-                    <img src="photos/IMG_5629.jpeg" alt="slide" class="photo">
-                    <img src="photos/orange-tree1.jpg" alt="slide" class="photo">
-                    <img src="photos/shrem.jpg" alt="slide" class="photo">
-                </div>
-            </div>
-        </section>
+<!-- Home -->
+<main  id='homepage' class="home">
+    <h1 id="title">Here or There?</h1>
 
-    -->
-
-
-
-<!-- Slideahow -->
-
-<!-- <div id="content">
-    <img src="slides/image1.jpg" alt="slideshow image" id="myimage">
-</div>
-
-<p id="links"><a href="#" id="previous">previous</a><a href="#" id="next">next</a></p> --> 
-
-<!-- Overlay -->
-<h1>Here or There?</h1>
-<main class="hidden">
-    
-
-    <img id="office" class="open" src="images/office.jpg" alt= "Office Room" >
-    <img id="dog" class="open" src="images/dog.jpg" alt= "Balloon Dog" >
-    <img id="pointing" class="open" src="images/pointing.jpg" alt= "Balloon Dog" >
+    <img id="office" class="open, himg" src="images/office.jpg" alt= "Office Room" >
+    <img id="dog" class="open, himg" src="images/dog.jpg" alt= "Balloon Dog" >
+    <img id="pointing" class="open, himg" src="images/pointing.jpg" alt= "Balloon Dog" >
     
 
 </main>
@@ -85,38 +40,67 @@
 
 <!-- Overlays -->
 <!--  Laksa Overlay -->
-<section id="laksa-overlay" >
-            <div class="slider">
-                <div class="a">
-                    <img src="images/laksa-stall.jpg" alt="slide" class="photo">
-                    <img src="images/laksa-table.jpg" alt="slide" class="photo">
-                    <img src="images/laksa-close.jpg" alt="slide" class="photo">
-                   
-                </div>
-            </div>
+<section id="laksa-overlay" class="hidden" >
+    <div class="top-row">
+        <h1 class="overlay-title">Here, Tasty Food </h1>
+    </div>
+
+    <div class="column1">
+        <img src="images/laksa-stall.jpg" alt="slideshow image" id="myimage">
+    </div>
+
+    <div class="column2">
+        <p>Working at my office in Singapore was full of surprises. One of the fun ones was lunch! This is a Michelin star Laksa stall that my coworker took me to :) </p>
+        <button class="close">Close</button>
+    </div>
         
-        <button class="close">close</button>
-    </article>
+    
+
 </section>
 
 <!--  Whoa Overlay -->
-<section id="laksa-overlay" class="hidden">
-    <article>
-        <h2>Overlay content here</h2>
-        <img src="images/"kitten">
+<section id="whoa-overlay" class="hidden">
+
+     <div class="top-row">
+        <h1 class="overlay-title">Or, a Laugh </h1>
+     </div>
+
+    <div class="column1" >
+        <img src="images/whoa-face.jpg">
+    </div>
         
-        <button class="close">close</button>
-    </article>
+    <div class="column2">
+        <p>That dog was unexpected... but also a great laugh! Meanwhile, this dessert was yummy and cute! 
+        <br>
+        <br>
+        It was a great way to chill... <br>(pun intended)
+        </p>
+
+
+        <button class="close">Close</button>
+     </div>
+        
+    
 </section>
 
-<!--  Video Overlay -->
-<section id="laksa-overlay" class="hidden">
-    <article>
-        <h2>Overlay content here</h2>
-        <img src="images/"kitten">
+<!--  Tree Overlay -->
+<section id="tree-overlay" class="hidden">
+
+    <div class="top-row">
+        <h2 class="overlay-title">There, a Beautiful Sight</h2>
+    </div>
+
+    <div class="column1">
+        <img src="images/tree.jpg">
+    </div>
+
+    <div class="column2">
+        <p>These trees created a musical light show I went to see with other study-abroad participants. During the musical, the weather added further effects to the music with the thunder, lightning and clouds that approached us.</p>
+
+         <button class="close">Close</button>
+    </div>
         
-        <button class="close">close</button>
-    </article>
+    
 </section>
 
 

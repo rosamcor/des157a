@@ -2,19 +2,29 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: rgb(255, 241, 164);
 }
 
+/* Homepage Layout */
 main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5em;
+    padding: 3em;
     margin: auto;
 
     
     
     
     
+}
+
+#title {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 7.5em;
+    word-spacing: .3em;
+    color: rgb(228, 116, 41); 
 }
 
 img {
@@ -24,220 +34,80 @@ img {
     
 }
 
+.himg:hover {
+    transform: scale(1.05);
+}
+
+
+/* Overlay Properties */
 .hidden {
     display: none;
 }
 
 .showing {
-    display: block;
+    display: flex;
 }
 
 .home{
-    display: flex;
-}
-
-/* SlideShow Overlay */
-
-#laksa-overlay {
-    width: 100%;
-    overflow-x: hidden;
-    background-color: rgba(0,0,0,0.5);
-    width: 100vw;
-    height: 100vh;
-}
-
-.slider {
-    display: flex;
-    position: absolute;
-    top:25vh;
-    left: 50vh;
-    height: 500px;
-}
-
-.slider div img {
-    height: 100%;
     display: block;
-    margin-right: 20px;
 }
 
-.a, .b {
-   display: flex;
-   height: 100%;
-}
 
-@keyframes moveSlider {
-    from { left: 0; }
-    to { left: var(--sliderwidth) }
-}
-.animate {
-    animation-name: moveSlider;
-    animation-duration: 60s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
+/* Overlays Layout */
 
-/* Slider CSS */
-/*
-:root {
-    --sliderwidth: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-*/
-/* I added this for the section */
-/* 
-change to laska
-#one {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-.slider {
-    display: flex;
-    position: absolute;
-    top:0;
-    left: 0;
-    height: 200px;
-}
-
-.slider div img {
-    height: 100%;
-    display: block;
-    margin-right: 20px;
-}
-
-.a, .b {
-   display: flex;
-   height: 100%;
-}
-
-@keyframes moveSlider {
-    from { left: 0; }
-    to { left: var(--sliderwidth) }
-}
-.animate {
-    animation-name: moveSlider;
-    animation-duration: 60s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-*/
-
-/* Slideshow (Advanced) */
-/*
-body, p { margin: 0; padding: 0; }
-
-body { padding: 100px; background: #717171; }
-
-#content {
-	margin: 100px auto 20px auto;
-	border: 10px solid #4C4C4C;
-	width: 400px;
-	height: 266px;
-	position: relative;
-}
-
-#content img {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-p { text-align: center; }
-
-/********** Link Styles ***********/
-
-/*
-#links {
-	width: 420px;
-	display: flex;
-	margin: auto;
-}
-
-#links a {
-	display: block;
-	flex: 1;
-	background: #6C0204;
-	height: 50px;
-	line-height: 50px;
-	color: #D5D5D5;
-	text-decoration: none;
-	font-family: Arial;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-#links a:hover {
-	background: #A51D1F;
-	color: #fff;
-}
-*/
-/************ Animation Styles ************/
-
-/*
-.fadeinimg {
-	animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-*/
-
-
-
-/* Overlays */
-/*
-body {
-    font-family: arial;
-    color: #333;
-    padding-top: 200px;
-    line-height: 1.4em;
-}
-
-main {
-    max-width: 600px;
-    padding: 20px;
+#laksa-overlay, #whoa-overlay, #tree-overlay {
     margin: auto;
-    background-color: aliceblue;
-} 
-
-.hidden {
-    display: none;
-}
-
-.showing {
-    display: block;
-}
-
-#overlay {
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    top: 0;
-    left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100vw;
+    background-color: rgba(245, 57, 57, 0.25);
+    width: 80%;
     height: 100vh;
 }
 
-#overlay article {
-    box-sizing: border-box;
-    background-color:#fff;
-    padding: 20px;
-    width: 50vw;
-    height: 80vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow-y: scroll;
+.top-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    
+    
 }
-*/
+
+.overlay-title {
+    margin: auto;
+    font-family: 'Titan One';
+    font-size: 6em;
+    font-weight: 400;
+    color:  rgb(46, 25, 2);
+}
+
+ .column1 {
+   width: 50%;
+   z-index: 1;
+   
+}
+ .column2 {
+    width: 50%;
+    text-align: center;
+    
+ }
+
+.column2 p {
+    padding: 0em 7em 5em 0em ;
+    text-align: left;
+    font-family: 'Source Sans Pro';
+    font-size: 1.5em;
+    font-weight: 400;
+    color:  rgb(46, 25, 2);
+}
+
+.column2 button {
+    background-color: rgb(228, 116, 41); 
+    border: none;
+    padding: 10px 25px 10px 25px;
+    font-family: 'Source Sans Pro';
+    font-size: 1.25em;
+    font-weight: 400;
+}
+    
