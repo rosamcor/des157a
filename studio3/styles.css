@@ -1,0 +1,130 @@
+body {
+    font-family: Arial;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+    background-color: #FFD0E6;
+    font-family: 'Lato';
+    
+}
+
+/* StartPage */
+#start-page{
+    margin: auto;
+    text-align: left;
+    max-width: 30%;
+    font-size: 1em;
+}
+
+#start-page h1{
+    font-family:  'Bebas Neue';
+    font-size: 6em;
+}
+ #instruction {
+    font-size: 1.22em;
+ }
+
+ #startgame {
+    background-color: #B881D7;
+    padding: 10px 35px 10px 35px;
+    border-radius: .25em;
+    border: none;
+}
+
+/* GamePage */
+#game-page{
+    margin: auto;
+    
+}
+
+#game-title{
+    text-align: center;
+    font-family:  'Bebas Neue';
+    font-size: 6em;
+}
+
+
+
+div {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+#gamecontrol, #score {
+    background-color: #FFD0E6;
+    margin: auto;
+    font-size: 1.22em;
+   
+}
+
+#game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 20%;
+    text-align: center;
+    padding-bottom: 0;
+    
+}
+
+#game p {
+    width: 100%;
+    padding-bottom: 2em;
+    font-weight: bold;
+    font-size: 1.5em;
+    
+}
+
+
+#actions{
+    display: flex;
+    justify-content: space-around;
+    max-width: 15%;
+}
+
+
+
+
+/* Game Overlay */
+.hidden {
+    display: none;
+}
+.showing {
+    display: block;
+}
+
+/* Buttons */
+button:hover{
+    transform: scale(1.05);
+}
+
+#rollagain {
+    background-color: #B881D7;
+    padding: 10px 35px 10px 35px;
+    border-radius: .25em;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#pass{
+    background-color: #B881D7;
+    padding: 10px 35px 10px 35px;
+    border-radius: .25em;
+    border: none;
+    font-size: 1.15em;
+}
+
+#roll{
+    background-color: #B881D7;
+    padding: 10px 35px 10px 35px;
+    border-radius: .25em;
+    border: none;
+}
+
+#quit{
+    text-decoration: underline;
+    text-align: center;
+    font-size: .85em;
+}

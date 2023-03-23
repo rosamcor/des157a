@@ -2,7 +2,10 @@
     "use strict";
     console.log("reading js");
     
+    const startPage = document.getElementById('start-page');
     const startGame = document.getElementById('startgame');
+    const gamePage = document.getElementById('game-page');
+    const gameTitle = document.getElementById('game-title');
     const gameControl = document.getElementById('gamecontrol');
     const game = document.getElementById('game');
     let score = document.getElementById('score');
@@ -10,8 +13,8 @@
 
     // Keeping Track of Data w/ Object
     let gameData = {
-        dice: ['images/1die.jpg', 'images/2die.jpg', 'images/3die.jpg', 'images/4die.jpg', 'images/5die.jpg', 'images/6die.jpg'],
-        players: ['player 1', 'player 2'],
+        dice: ['images/one.jpg', 'images/two.jpg', 'images/three.jpg', 'images/four.jpg', 'images/five.jpg', 'images/six.jpg'],
+        players: ['Player 1', 'Player 2'],
         score: [0, 0],
         roll1: 0,
         roll2: 0,
@@ -26,8 +29,11 @@
         gameData.index = Math.round(Math.random());
         console.log(gameData.index);
 
-        gameControl.innerHTML = '<h2>The Game Has Started</h2>';
-        gameControl.innerHTML += '<button id="quit">Wanna Quit?</button>';
+        gamePage.className = "showing";
+        startPage.className = "hidden";
+        
+        gameTitle.innerHTML = 'Piggy Time!';
+        gameControl.innerHTML += '<a id="quit">Quit</a>';
 
         document.getElementById('quit').addEventListener("click", function(){
             location.reload();
@@ -38,8 +44,8 @@
 
         //Sets content of game & eventhandler for dice roll button
         function setUpTurn() {
-            game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
-            actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
+            game.innerHTML = `<p> ${gameData.players[gameData.index]}, roll the dice</p>`;
+            actionArea.innerHTML = '<button id="roll">Roll Dice</button>';
             document.getElementById('roll').addEventListener('click', function() {
                 throwDice();
                 console.log("roll the dice!");
@@ -52,7 +58,7 @@
             actionArea.innerHTML = '';
             gameData.roll1 = Math.floor(Math.random() * 6) + 1; // using ciel would result in zero
             gameData.roll2 = Math.floor(Math.random() * 6) + 1;
-            game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+            game.innerHTML = `<p>${gameData.players[gameData.index]} Decide. . .</p>`;
             game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}">
                                 <img src="${gameData.dice[gameData.roll2-1]}">`;
             gameData.rollSum = gameData.roll1 + gameData.roll2;
@@ -64,7 +70,7 @@
                 gameData.score[gameData.index] = 0;
                 gameData.index ? (gameData.index  = 0) : (gameData.index = 1);
                 //Show the current score
-                setTimeout(setUpTurn,2000);
+                setTimeout(setUpTurn,6000);
                 showCurrentScore();
             }
             //if either die is a 1...
@@ -72,13 +78,13 @@
                 console.log("one of the two dice was a 1");
                 gameData.index ? (gameData.index  = 0) : (gameData.index = 1);
                 game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
-                setTimeout(setUpTurn, 2000);
+                setTimeout(setUpTurn, 6000);
             }
             //if neither die is a 1...
             else{
                 console.log("the game proceeds");
                 gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-                actionArea.innerHTML = '<button id="rollagain">Roll again</button> or <button id="pass">Pass</button>';
+                actionArea.innerHTML = '<button id="pass">Pass</button> <button id="rollagain">Roll</button> ';
 
                 document.getElementById('rollagain').addEventListener('click', function () {
                     setUpTurn();
@@ -106,16 +112,14 @@
             }
             else{
                 //show current score
-                score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> and <strong>${gameData.players[1]}
-                ${gameData.score[1]}</strong></p>`;
+                score.innerHTML = `<p><strong>${gameData.players[0]}  score: ${gameData.score[0]}</strong> <br><br> <strong>${gameData.players[1]}  score: ${gameData.score[1]}</strong></p>`;
             }
 
            
         }
         
         function showCurrentScore() {
-            score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> and <strong>${gameData.players[1]}
-            ${gameData.score[1]}</strong></p>`; 
+            score.innerHTML = `<p><strong>${gameData.players[0]}  score: ${gameData.score[0]}</strong> <br><br> <strong>${gameData.players[1]}  score: ${gameData.score[1]}</strong></p>`;
         }
 
         
