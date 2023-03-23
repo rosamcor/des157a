@@ -8,8 +8,18 @@
     const gameTitle = document.getElementById('game-title');
     const gameControl = document.getElementById('gamecontrol');
     const game = document.getElementById('game');
+    
     let score = document.getElementById('score');
     let actionArea = document.getElementById('actions');
+
+    //Sounds created by Rosaamelia Cordova
+    const rollSound = new Audio('sounds/dice-roll.m4a');
+    const passSound = new Audio('sounds/pass.m4a');
+
+
+
+
+
 
     // Keeping Track of Data w/ Object
     let gameData = {
@@ -47,10 +57,15 @@
             game.innerHTML = `<p> ${gameData.players[gameData.index]}, roll the dice</p>`;
             actionArea.innerHTML = '<button id="roll">Roll Dice</button>';
             document.getElementById('roll').addEventListener('click', function() {
+
                 throwDice();
                 console.log("roll the dice!");
 
             })
+            //Sound for Roll
+            document.getElementById('roll').addEventListener('mousedown', function(){
+                rollSound.play();
+            });
         }
 
         //Throwing Dice
@@ -90,9 +105,19 @@
                     setUpTurn();
                 });
 
+                //Sound for Roll Again
+                document.getElementById('rollagain').addEventListener('mousedown', function(){
+                    rollSound.play();
+                });
+
                 document.getElementById('pass').addEventListener('click', function (){
                     gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                     setUpTurn();
+                });
+
+                //Sound for Pass
+                document.getElementById('pass').addEventListener('mousedown', function(){
+                    passSound.play();
                 });
 
                 //Check winning condition
@@ -130,6 +155,12 @@
     });
 
 
+    
+    
+
+  
+
+    
 
 
 
