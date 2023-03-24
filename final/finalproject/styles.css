@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #C9ECFF;
+}
+
+/* Homepage Layout */
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+    margin: auto;
+
+    
+    
+    
+    
+}
+
+#title {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 7.5em;
+    word-spacing: .3em;
+    color: rgb(45, 97, 13); 
+}
+
+img {
+    margin: .75em;
+    max-height: 500px;
+    
+    
+    
+}
+
+#pointing, #dog, #office {
+    border: .7em solid rgb(45, 97, 13);
+}
+
+.himg:hover {
+    transform: scale(1.1);
+}
+
+
+/* Overlay Properties */
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: flex;
+}
+
+.home{
+    display: block;
+}
+
+
+/* Overlays Layout */
+
+#laksa-overlay, #whoa-overlay, #tree-overlay {
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: rgb(45, 97, 13, 0.25);
+    width: 80%;
+    height: 100vh;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    
+    
+}
+
+.overlay-title {
+    margin: auto;
+    font-family: 'Titan One';
+    font-size: 6em;
+    font-weight: 400;
+    color:  rgb(46, 25, 2);
+}
+
+ .column1 {
+   width: 50%;
+   z-index: 1;
+   
+}
+ .column2 {
+    width: 50%;
+    text-align: center;
+    
+ }
+
+.column2 p {
+    padding: 0em 7em 5em 0em ;
+    text-align: left;
+    font-family: 'Source Sans Pro';
+    font-size: 1.5em;
+    font-weight: 400;
+    color:  rgb(46, 25, 2);
+}
+
+.column2 button {
+    background-color: rgb(255, 154, 86); 
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    font-family: 'Source Sans Pro';
+    font-size: 1.25em;
+    font-weight: 400;
+    
+}
+
+.column2 button:hover {
+    background-color: rgb(255, 154, 86); 
+    transform: scale(1.10);
+    
+}
+
+footer{
+    font-family: 'Source Sans Pro';
+    font-size: .95em;
+    width: 100%;
+    text-align: center;
+}
+    
